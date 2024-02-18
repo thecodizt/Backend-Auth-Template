@@ -17,7 +17,7 @@ app.get("/", (req: Request, res: Response) => {
 	res.send("Welcome to Express & TypeScript Server");
 });
 
-app.use("/api/v1", api);
+app.use("/v1", api);
 
 app.use(notFound);
 app.use(errorHandler);

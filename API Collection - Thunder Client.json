@@ -1,0 +1,159 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "API Collection",
+    "dateExported": "2024-02-18T03:49:47.725Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "20543f4e-d21c-4e06-ae2e-6b19659995ab",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2024-02-18T03:49:14.517Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8e172699-8b4f-463f-a4f4-686979a89101",
+            "colId": "87b2790e-c99f-4d51-9c21-df09e0512b9c",
+            "containerId": "20543f4e-d21c-4e06-ae2e-6b19659995ab",
+            "name": "Signin",
+            "url": "http://localhost:8000/v1/auth/signin",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-17T13:51:10.252Z",
+            "modified": "2024-02-17T13:51:10.252Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ZjVlYzU0MS0zMjNkLTQzMGYtYjY0My1hM2NjM2M2MjNjZDgiLCJpYXQiOjE3MDgxNzc0MDgsImV4cCI6MTcwODE3ODMwOH0.HmPLjB-lRQnzneTsC1czyE4zcaC2wSninHv9txXsIMs"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test@test\",\n  \"password\": \"test\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b240a350-c503-45c9-a109-d27ef5d44a56",
+            "colId": "87b2790e-c99f-4d51-9c21-df09e0512b9c",
+            "containerId": "20543f4e-d21c-4e06-ae2e-6b19659995ab",
+            "name": "Signup",
+            "url": "http://localhost:8000/v1/auth/signup",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-17T13:51:36.773Z",
+            "modified": "2024-02-17T13:51:36.773Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test@test\",\n  \"password\": \"test\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "54740413-657e-4c32-8c16-048f0777fedc",
+            "colId": "87b2790e-c99f-4d51-9c21-df09e0512b9c",
+            "containerId": "20543f4e-d21c-4e06-ae2e-6b19659995ab",
+            "name": "Test users endpoint",
+            "url": "http://localhost:8000/v1/users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-18T03:37:06.256Z",
+            "modified": "2024-02-18T03:37:06.256Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ZjVlYzU0MS0zMjNkLTQzMGYtYjY0My1hM2NjM2M2MjNjZDgiLCJpYXQiOjE3MDgxNzc0MDgsImV4cCI6MTcwODE3ODMwOH0.HmPLjB-lRQnzneTsC1czyE4zcaC2wSninHv9txXsIMs"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1b6152d2-8a7b-4be1-be59-0664f8b744d4",
+            "colId": "87b2790e-c99f-4d51-9c21-df09e0512b9c",
+            "containerId": "20543f4e-d21c-4e06-ae2e-6b19659995ab",
+            "name": "Refresh Token",
+            "url": "http://localhost:8000/v1/auth/refreshtoken",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-18T03:48:31.221Z",
+            "modified": "2024-02-18T03:48:31.221Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ZjVlYzU0MS0zMjNkLTQzMGYtYjY0My1hM2NjM2M2MjNjZDgiLCJqdGkiOiI0YzI3MWRlZS0wMzYxLTQxYmMtYTI1MC0wMDM0NmU2NDIzMTkiLCJpYXQiOjE3MDgyMjgwMzMsImV4cCI6MTcwODI1NjgzM30.Ez5nOYybYInRRXHmmTZiOA7v3k6p4fqD4kZArZbFEgQ\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4774ec61-1f74-4eb9-8064-0df67b0c00ad",
+            "colId": "87b2790e-c99f-4d51-9c21-df09e0512b9c",
+            "containerId": "20543f4e-d21c-4e06-ae2e-6b19659995ab",
+            "name": "Revoke Refresh Tokens",
+            "url": "http://localhost:8000/v1/auth/revokerefreshtokens",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-18T03:48:39.797Z",
+            "modified": "2024-02-18T03:48:39.797Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"6f5ec541-323d-430f-b643-a3cc3c623cd8\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
